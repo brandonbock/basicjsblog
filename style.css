@@ -1,0 +1,58 @@
+* { 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+header, header *, h1, h2, h3, .pagination {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+header {
+    color:white;
+    background-color:#aaa;
+    text-align:center;
+    font-size:3em;
+    padding:5%
+}
+
+header small {
+    font-size:0.5em;
+    opacity:0.8;
+    vertical-align:middle;
+}
+
+header small:hover {
+    opacity:1;
+    cursor:pointer;
+}
+
+.posts {
+    margin-top:5%;
+}
+
+.post {
+    padding:5%;
+    background-color:#aaa;
+    margin-bottom:5%;
+}
+
+.posts .post {
+    color: White;
+    display:block;
+    transition:background-color 0.5s;
+}
+
+.posts .post:hover {
+    background-color:#555;
+}
+
+.posts .post h1 {
+    padding-top: 30%;
+}
+
+.pagination {
+    color:White;
+    background-color:#aaa;
+    text-align:center;
+}
