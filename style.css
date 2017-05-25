@@ -3,7 +3,11 @@
     font-size: 16px;
 }
 
-header, header *, h1, h2, h3, .pagination {
+.container-fluid {
+    max-width:1200px;
+}
+
+header, header *, h1, h2, h3, .pagination div {
     font-family: Arial, Helvetica, sans-serif;
     font-weight:bold;
 }
@@ -12,8 +16,12 @@ header {
     color:white;
     background-color:#aaa;
     text-align:center;
-    font-size:3em;
     padding:5%
+}
+
+header a, header a:hover { 
+    color: inherit; 
+    font-size:3em;
 }
 
 header small {
@@ -43,7 +51,7 @@ header small:hover {
     transition:background-color 0.5s;
 }
 
-.posts .post:hover {
+.posts .post:hover, .pagination div:hover {
     background-color:#555;
 }
 
@@ -52,7 +60,32 @@ header small:hover {
 }
 
 .pagination {
-    color:White;
-    background-color:#aaa;
+    color:White; 
     text-align:center;
+    margin: 0;
+}
+
+.pagination div {
+    transition:background-color 0.5s;
+    background-color:#aaa;
+    padding:15px 0;
+}
+
+.post-body {
+    margin-bottom:5%;
+}
+
+.post-body > * {
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.post-body img {
+    max-width:100%;
+    margin-bottom:1rem;
+}
+
+.negate-margin {
+    margin-left:0;
+    margin-right:0;
 }
